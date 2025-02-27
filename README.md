@@ -14,7 +14,7 @@ Beyond the art itself, Artificial Purrfection is a testament to the power of ⚡
 ![Static Badge](https://img.shields.io/badge/CSS-%23663399)  
 ![Static Badge](https://img.shields.io/badge/JavaScript-%23F7DF1E)  
 
-## ❓ How to get the most out of this project?  
+## ❓ How to get the most out of this project?  💻
 
 <div align="center">
     👉 Check out the page <a href="https://ceceliabraswell.github.io/artificial-purrfection/">here</a>! 🚀
