@@ -51,3 +51,28 @@ window.addEventListener("scroll", () => {
         scrollUp.classList.remove("active");  // changes opacity of scroll up icon to 0 after 100px
     }
 })
+
+
+
+// contact form
+const contactButton = document.getElementById("contact-button");
+const contactForm = document.getElementById("contact-form");
+const contactClose = document.getElementById("contact-close");
+
+// function to open the pop up
+function openContact() {
+    contactForm.style.display = "flex";
+}
+
+// function to close the pop up
+function closeContact() {
+    contactForm.style.display = "none";
+}
+
+// event listeners
+contactButton.addEventListener('click', openContact);
+contactClose.addEventListener('click', closeContact);
+
+function submitAlert() {
+    alert("Your message has been sent!")
+}

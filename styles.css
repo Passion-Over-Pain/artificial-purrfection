@@ -2,6 +2,7 @@
     --white: #fff;
     --off-white: #fff8f8;;
     --gold: gold;
+    --blue: blue;
     --dark-gray: #555;
     --transparent: rgba(0, 0, 0, 0.379);  
     --transparent2: rgba(0, 0, 0, 0.714);  
@@ -202,7 +203,7 @@ nav li a:hover,
 }
 
 .close:hover {
-    color: blue;
+    color: var(--blue);
 }
 
 
@@ -261,6 +262,114 @@ nav li a:hover,
 .exhibitions-content p {
     line-height: 1.5;
     text-align: center;
+}
+
+
+
+
+/* new contact form styling */
+
+.contact-container {
+    background: url(images/contact-image.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.contact-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--blue);
+    color: var(--white);
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    background: rgba(0, 0, 255, 0.733);
+}
+
+#contact-form {
+    position: fixed;
+    background-color: rgba(6, 6, 6, 0.929); 
+    color: var(--white);
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-popup {
+    width: 30%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#contact-form h2 {
+    padding-bottom: 20px;
+}
+
+#contact-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: var(--white);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    font-size: 1rem;
+    outline: none;
+}
+
+.submit-btn {
+    background: #007bff;
+    color: var(--white);
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #0056b3;
 }
 
 /* footer */
@@ -389,6 +498,20 @@ nav li a:hover,
         font-size: 3rem;
     }
 
+    .contact-popup {
+        width: 90%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    #contact-form {
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px;
+    }
+
   }
 
 
@@ -402,4 +525,15 @@ nav li a:hover,
       background-size: 100% 100%;
     }
   }
+
+
+
+
+
+
+
+  /* old contact page */
+
+
+
 

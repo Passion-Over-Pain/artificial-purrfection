@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <header class="header  header-padding">
+    <header class="header">
         <div class="logo">
             <a href="index.html"><img src="images/logo.png" alt="logo"></a>
         </div>
@@ -34,10 +34,62 @@
         </div>
     </header>
 
-    <footer class="footer footer-padding">
+    <div class="contact-container">
+        <button class="contact-button" id="contact-button">Contact Us</button>
+    </div>
+
+    <!-- new contact form -->
+
+    <div class="contact-form" id="contact-form">
+        <div class="contact-popup">
+            <span id="contact-close"><i class='bx bx-x'></i></span>
+            <h2>drop us a line</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Your Name: </label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email: </label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Your Number: </label>
+                    <input type="tel" id="number" name="number" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message: </label>
+                    <textarea name="message" id="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn" onclick="submitAlert()">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- old contact form -->
+
+    <!-- <div class="contact-form" id="contact-form">
+        <div class="contact-popup">
+            <span id="contact-close"><i class='bx bx-x'></i></span>
+            <h2>drop us a line</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="tel">Number:</label><br>
+                <input type="tel" id="tel" name="tel" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div> -->
+
+    <footer class="footer">
         <div class="footer-container">
             <div class="logo">
-                <img src="images/logo-white.png" alt="logo">
+                <a href="index.html"><img src="images/logo-white.png" alt="logo"></a>
             </div>
             <nav class="footer-nav">
                 <ul>
